@@ -53,13 +53,25 @@ int calc {1};
   cout << "Enter an exponent";
   cin >> expo;
 
+  // expo = 3
+  // calc = 5 * 5
+  // calc = 25
+  // answer= calc * num
+  //answer = 25 * 5
+  // answer = 125
   
 while (count <= expo) {
   
-  num2= (num * num);
+  num2=(num * num);
+  
   calc = num2; 
+  
   count ++;
 }
+
+
+
+  
   
 cout << calc;
   
