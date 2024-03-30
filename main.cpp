@@ -38,44 +38,64 @@ int main() {
 //****** Problem 2 ******
 
 
-int num2{0};
-int num{0};
-int count{0};
-int expo{0};
-int calc {1};
+// int num2{0};
+// int num{0};
+// int count{0};
+// int expo{0};
+// int calc {1};
 
 
 
   
-  cout << "Enter an integer";
-   cin >> num; 
+//   cout << "Enter an integer";
+//    cin >> num; 
 
-  cout << "Enter an exponent";
-  cin >> expo;
+//   cout << "Enter an exponent";
+//   cin >> expo;
 
-  // expo = 3
-  // calc = 5 * 5
-  // calc = 25
-  // answer= calc * num
-  //answer = 25 * 5
-  // answer = 125
+//   // expo = 3
+//   // calc = 5 * 5
+//   // calc = 25
+//   // answer= calc * num
+//   //answer = 25 * 5
+//   // answer = 125
   
-while (count <= expo) {
+// while (count <= expo) {
   
-  num2=(num * num);
+//   num2=(num * num);
   
-  calc = num2; 
+//   calc = num2; 
   
-  count ++;
-}
-
-
-
-  
-  
-cout << calc;
-  
+//   count ++;
+// }
 
 
+
+  
+  
+// cout << calc;
+  
+
+
+// ******
+
+
+
+   int n;
+    cout << "Enter the value of n to find first n Fibonacci sequences: ";
+    cin >> n;
+    int first = 0, second = 1, next;
+    cout << "First " << n << " Fibonacci sequences: ";
+    for (int i = 0; i < n; ++i) {
+        if (i <= 1)
+            next = i;
+        else {
+            next = first + second;
+            first = second;
+            second = next;
+        }
+        cout << next << " ";
+    }
+    return 0;
   
 } 
