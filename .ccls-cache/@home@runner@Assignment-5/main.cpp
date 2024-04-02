@@ -37,8 +37,6 @@ int main() {
 
 //****** Problem 2 ******
 
-
-// int num2{0};
 // int num{0};
 // int count{0};
 // int expo{0};
@@ -53,18 +51,16 @@ int main() {
 //   cout << "Enter an exponent";
 //   cin >> expo;
 
-//   // expo = 3
-//   // calc = 5 * 5
-//   // calc = 25
-//   // answer= calc * num
-//   //answer = 25 * 5
-//   // answer = 125
+  // expo = 3
+  // calc = 5 * 5
+  // calc = 25
+  // answer= calc * num
+  //answer = 25 * 5
+  // answer = 125
   
-// while (count <= expo) {
+// while (count < expo) {
   
-//   num2=(num * num);
-  
-//   calc = num2; 
+//   calc = calc * num; 
   
 //   count ++;
 // }
@@ -81,21 +77,24 @@ int main() {
 
 
 
-   int n;
-    cout << "Enter the value of n to find first n Fibonacci sequences: ";
-    cin >> n;
-    int first = 0, second = 1, next;
-    cout << "First " << n << " Fibonacci sequences: ";
-    for (int i = 0; i < n; ++i) {
-        if (i <= 1)
-            next = i;
-        else {
-            next = first + second;
-            first = second;
-            second = next;
-        }
-        cout << next << " ";
-    }
-    return 0;
-  
-} 
+  int num{0};
+  int count{0};
+  int ans{1}; //init at 1 for calculation purposes
+  int int1{0};
+  int int2{1}; // init at 1 for cal purposes
+
+      cout<< "Enter number: ";
+      cin >> num;
+
+
+      while (count < num) { // not less than or equal to cause we are starting the loop with a value.
+          cout << int1 << endl; // start with cout to display first #
+          ans = int1 + int2; // calculation
+          int1 = int2; // reassigning value
+          int2 = ans; //reassigning value
+          count++; // adjusting count
+
+      }
+  }
+
+}
