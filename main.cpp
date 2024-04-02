@@ -37,40 +37,28 @@ int main() {
 
 //****** Problem 2 ******
 
-// int num{0};
-// int count{0};
-// int expo{0};
-// int calc {1};
+   int count {0};
+      int integer{0};
+      int expo{0};
+      int calc {1};
+
+      cout << "Enter a number: ";
+      cin >> integer;
+
+      cout << "Enter an expononent"; 
+      cin >> expo;
+
+      while (count < expo) {
 
 
+          calc = calc * integer; //calculation 1* integer ->> 5*5 --> 25*5 and so on
+          count++; // increase count
 
-  
-//   cout << "Enter an integer";
-//    cin >> num; 
+      }
 
-//   cout << "Enter an exponent";
-//   cin >> expo;
+      cout << calc; //print statement
 
-  // expo = 3
-  // calc = 5 * 5
-  // calc = 25
-  // answer= calc * num
-  //answer = 25 * 5
-  // answer = 125
-  
-// while (count < expo) {
-  
-//   calc = calc * num; 
-  
-//   count ++;
-// }
-
-
-
-  
-  
-// cout << calc;
-  
+  }
 
 
 // ******
